@@ -57,6 +57,24 @@ Safe edit methods:
 - `create_file` for new files
 - `[System.IO.File]::ReadAllText/WriteAllText` with `New-Object System.Text.UTF8Encoding $false` (no BOM)
 
+## ⚠️ Python rule (CRITICAL)
+
+**Never** install Python packages globally (`pip install ...` or `pip install --user ...`).
+**Always** use the project virtual environment at `./.venv/`.
+
+```powershell
+# One-time setup
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r tools\requirements.txt
+
+# Run any project script
+.\.venv\Scripts\python.exe tools\<script>.py
+```
+
+When adding a new Python dependency:
+1. `.\.venv\Scripts\python.exe -m pip install <package>`
+2. Add it to [tools/requirements.txt](tools/requirements.txt) with a version pin.
+
 ## Conventions
 
 - **Brand colors:** `--court: #1f7a4d` (green), `--accent: #e63946` (red), `--ink: #14181f`. Defined in [assets/css/styles.css](assets/css/styles.css) `:root`.
@@ -74,10 +92,23 @@ Edit the `#results` section directly in [index.html](index.html). Each `.player`
 Add an `<a>` inside `.nav-links` in [index.html](index.html). The `.nav-cta` class makes it a red CTA button.
 
 ### Regenerate the poster PDF
+
+**Always use the project virtual environment — never `pip install` globally.**
+
+First-time setup (once):
 ```powershell
-python tools\generate_poster.py
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r tools\requirements.txt
 ```
-Requires `reportlab` and `qrcode[pil]` — install once with `python -m pip install --user reportlab "qrcode[pil]"`.
+
+Run the generator:
+```powershell
+.\.venv\Scripts\python.exe tools\generate_poster.py
+```
+
+Output: `poster_wzq.pdf` in the workspace root.
+
+The `.venv/` folder is gitignored. Dependencies are pinned in [tools/requirements.txt](tools/requirements.txt).
 
 ### Add a redirect / header
 Edit [netlify.toml](netlify.toml). Format docs: https://docs.netlify.com/configure-builds/file-based-configuration/
