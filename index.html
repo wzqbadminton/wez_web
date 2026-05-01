@@ -3,338 +3,31 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>WZQ Badminton Club · 羽毛球俱乐部</title>
-<link rel="icon" type="image/jpeg" href="logo.jpg" />
+<meta name="theme-color" content="#1f7a4d" />
+<title>WZQ Badminton Club · 羽毛球俱乐部 | Pomona, CA</title>
+<meta name="description" content="WZQ 羽毛球俱乐部 — 由原中国羽毛球退役运动员创办，BWF 世界羽联与美国羽毛球协会双认证教练。位于 Pomona, CA，提供儿童、青少年、成人羽毛球专业培训。" />
+<meta name="keywords" content="WZQ Badminton, 羽毛球, Pomona badminton, 羽毛球培训, 青少年羽毛球, badminton coaching, BWF, USAB" />
+<meta name="author" content="WZQ Badminton Club" />
+<link rel="canonical" href="https://wzqbadminton.com/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="WZQ Badminton Club · 羽毛球俱乐部" />
+<meta property="og:description" content="由原中国羽毛球退役运动员创办，BWF 与 USAB 双认证教练团队。位于 Pomona, CA。" />
+<meta property="og:url" content="https://wzqbadminton.com/" />
+<meta property="og:image" content="https://wzqbadminton.com/logo.jpg" />
+<meta property="og:locale" content="zh_CN" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="WZQ Badminton Club · 羽毛球俱乐部" />
+<meta name="twitter:description" content="由原中国羽毛球退役运动员创办，BWF 与 USAB 双认证教练团队。Pomona, CA。" />
+<meta name="twitter:image" content="https://wzqbadminton.com/logo.jpg" />
+
+<link rel="icon" type="image/jpeg" href="/logo.jpg" />
+<link rel="apple-touch-icon" href="/logo.jpg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://images.unsplash.com" />
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
-<style>
-  :root {
-    --bg: #f7f5f0;
-    --paper: #ffffff;
-    --ink: #14181f;
-    --ink-soft: #4a5160;
-    --muted: #8a90a0;
-    --line: #e7e3da;
-    --court: #1f7a4d;
-    --court-dark: #14533a;
-    --accent: #e63946;
-    --gold: #d4a017;
-    --silver: #9aa1ad;
-    --bronze: #b06b3a;
-    --radius: 14px;
-    --max: 1200px;
-    --shadow-sm: 0 2px 8px rgba(20,24,31,0.06);
-    --shadow-md: 0 10px 30px rgba(20,24,31,0.08);
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body {
-    font-family: 'Manrope', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: var(--bg); color: var(--ink); line-height: 1.65;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  nav {
-    position: sticky; top: 0; z-index: 50;
-    background: rgba(255,255,255,0.92);
-    backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--line);
-  }
-  .nav-inner {
-    max-width: var(--max); margin: 0 auto; padding: 14px 24px;
-    display: flex; align-items: center; justify-content: space-between; gap: 24px;
-  }
-  .brand {
-    display: flex; align-items: center; gap: 12px;
-    font-family: 'Bebas Neue', sans-serif; font-size: 24px; letter-spacing: 1.5px;
-    color: var(--ink); text-decoration: none;
-  }
-  .brand-mark {
-    width: 44px; height: 44px;
-    display: inline-flex; align-items: center; justify-content: center;
-    overflow: hidden;
-  }
-  .brand-mark img { width: 100%; height: 100%; object-fit: contain; display: block; }
-  .nav-links { display: flex; gap: 4px; flex-wrap: wrap; align-items: center; }
-  .nav-links a {
-    color: var(--ink-soft); text-decoration: none; font-weight: 600;
-    font-size: 14px; padding: 8px 14px; border-radius: 8px; transition: all 0.18s ease;
-    display: inline-flex; align-items: center;
-  }
-  .nav-links a:hover { color: var(--accent); background: #fbeeef; }
-  .nav-cta { background: var(--accent); color: white !important; padding: 10px 18px !important; }
-  .nav-cta:hover { background: #c52a37 !important; }
-
-  .hero {
-    position: relative; overflow: hidden;
-    background:
-      linear-gradient(180deg, rgba(20,83,58,0.85) 0%, rgba(20,83,58,0.92) 100%),
-      url('https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=1800&q=80') center/cover no-repeat;
-    color: white; border-bottom: 6px solid var(--accent);
-  }
-  .hero-inner { max-width: var(--max); margin: 0 auto; padding: 110px 24px 130px; position: relative; z-index: 2; }
-  .hero::after {
-    content: ''; position: absolute; inset: 0;
-    background-image:
-      linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
-    background-size: 60px 60px; pointer-events: none; z-index: 1;
-  }
-  .eyebrow {
-    display: inline-flex; align-items: center; gap: 10px;
-    font-family: 'Bebas Neue', sans-serif; font-size: 16px; letter-spacing: 4px;
-    color: #ffd9dc; margin-bottom: 20px;
-  }
-  .eyebrow::before { content: ''; width: 32px; height: 2px; background: var(--accent); display: inline-block; }
-  .hero h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(54px, 9vw, 120px); line-height: 0.95; letter-spacing: 1px;
-    margin-bottom: 24px; text-transform: uppercase;
-  }
-  .hero h1 .accent { color: #ffd9dc; }
-  .hero h1 .underline { display: inline-block; border-bottom: 6px solid var(--accent); padding-bottom: 4px; }
-  .hero-sub { font-size: clamp(17px, 2vw, 21px); max-width: 640px; color: rgba(255,255,255,0.92); margin-bottom: 36px; line-height: 1.7; }
-  .hero-cta { display: flex; flex-wrap: wrap; gap: 14px; }
-  .btn {
-    display: inline-flex; align-items: center; gap: 10px;
-    padding: 16px 30px; border-radius: 10px; font-weight: 700; font-size: 15px;
-    text-decoration: none; transition: all 0.2s ease; border: 2px solid transparent;
-    text-transform: uppercase; letter-spacing: 1px;
-  }
-  .btn-primary { background: var(--accent); color: white; box-shadow: 0 8px 20px rgba(230,57,70,0.35); }
-  .btn-primary:hover { background: #c52a37; transform: translateY(-2px); }
-  .btn-outline { background: transparent; color: white; border-color: rgba(255,255,255,0.5); }
-  .btn-outline:hover { background: rgba(255,255,255,0.1); border-color: white; }
-
-  .hero-stats {
-    background: white; border-radius: var(--radius); box-shadow: var(--shadow-md);
-    max-width: var(--max); margin: -60px auto 0; position: relative; z-index: 5;
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); overflow: hidden;
-  }
-  .hero-stats > div { padding: 28px 24px; text-align: center; border-right: 1px solid var(--line); }
-  .hero-stats > div:last-child { border-right: 0; }
-  .stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 44px; color: var(--court); line-height: 1; }
-  .stat-num span { color: var(--accent); }
-  .stat-label { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 2px; margin-top: 8px; }
-
-  section { max-width: var(--max); margin: 0 auto; padding: 90px 24px; }
-  .section-head { margin-bottom: 50px; max-width: 720px; }
-  .section-head .label {
-    font-family: 'Bebas Neue', sans-serif; font-size: 16px; letter-spacing: 4px;
-    color: var(--accent); margin-bottom: 12px;
-  }
-  .section-head h2 {
-    font-family: 'Bebas Neue', sans-serif; font-size: clamp(36px, 5vw, 58px);
-    line-height: 1; letter-spacing: 1px; color: var(--ink); text-transform: uppercase;
-  }
-  .section-head p { margin-top: 14px; color: var(--ink-soft); font-size: 17px; }
-  .section-head.center { margin-left: auto; margin-right: auto; text-align: center; }
-
-  .about-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 50px; align-items: center; }
-  .about-text p { color: var(--ink-soft); font-size: 17px; margin-bottom: 18px; }
-  .about-text .lead { font-size: 22px; color: var(--ink); font-weight: 600; line-height: 1.5; }
-  .about-image {
-    background: white;
-    border-radius: var(--radius);
-    aspect-ratio: 4/5;
-    box-shadow: var(--shadow-md);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    overflow: hidden;
-  }
-  .about-image img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-  }
-  .about-image::after {
-    content: ''; position: absolute; bottom: -25px; right: -25px;
-    width: 110px; height: 110px; background: white; border-radius: 50%;
-    background-image: url('logo.jpg');
-    background-size: 78%;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: var(--shadow-md);
-  }
-
-  .creds-section { background: white; }
-  .creds-wrap { max-width: var(--max); margin: 0 auto; padding: 90px 24px; }
-  .creds-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
-  .cred {
-    padding: 28px 24px; border: 1px solid var(--line); border-radius: var(--radius);
-    transition: all 0.2s ease; background: var(--paper);
-  }
-  .cred:hover { border-color: var(--court); transform: translateY(-3px); box-shadow: var(--shadow-md); }
-  .cred-num { font-family: 'Bebas Neue', sans-serif; font-size: 42px; color: var(--accent); line-height: 1; margin-bottom: 14px; }
-  .cred h3 { font-size: 17px; font-weight: 700; margin-bottom: 8px; }
-  .cred p { color: var(--ink-soft); font-size: 14px; }
-
-  .programs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
-  .program {
-    background: white; border-radius: var(--radius); overflow: hidden;
-    box-shadow: var(--shadow-sm); transition: all 0.25s ease;
-    display: flex; flex-direction: column;
-  }
-  .program:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
-  .program-img { height: 180px; background-size: cover; background-position: center; position: relative; }
-  .program-img::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.5)); }
-  .program-tag {
-    position: absolute; top: 14px; left: 14px;
-    background: var(--accent); color: white; font-family: 'Bebas Neue', sans-serif;
-    font-size: 14px; letter-spacing: 2px; padding: 6px 12px; border-radius: 6px; z-index: 2;
-  }
-  .program-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
-  .program h3 { font-family: 'Bebas Neue', sans-serif; font-size: 26px; letter-spacing: 1px; margin-bottom: 12px; }
-  .program p { color: var(--ink-soft); font-size: 15px; flex: 1; }
-  .program-meta { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--court); font-weight: 700; font-size: 14px; }
-
-  .schedule-section { background: var(--ink); color: white; }
-  .schedule-wrap { max-width: var(--max); margin: 0 auto; padding: 90px 24px; }
-  .schedule-section .section-head h2 { color: white; }
-  .schedule-section .section-head .label { color: #ffd9dc; }
-  .schedule-section .section-head p { color: rgba(255,255,255,0.7); }
-  .schedule-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
-  .sched-card {
-    background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1);
-    border-radius: var(--radius); padding: 26px; transition: all 0.2s ease;
-  }
-  .sched-card:hover { border-color: var(--accent); background: rgba(255,255,255,0.06); }
-  .sched-card .tag {
-    display: inline-block; background: var(--accent); color: white;
-    font-family: 'Bebas Neue', sans-serif; font-size: 13px; letter-spacing: 2px;
-    padding: 4px 10px; border-radius: 4px; margin-bottom: 14px;
-  }
-  .sched-card h3 { font-family: 'Bebas Neue', sans-serif; font-size: 24px; letter-spacing: 1px; margin-bottom: 14px; }
-  .sched-card .age { color: #ffd9dc; font-size: 13px; font-weight: 500; margin-left: 8px; }
-  .sched-card .times { list-style: none; color: rgba(255,255,255,0.85); }
-  .sched-card .times li {
-    padding: 6px 0; font-size: 14px; border-bottom: 1px dashed rgba(255,255,255,0.1);
-    display: flex; justify-content: space-between; gap: 12px;
-  }
-  .sched-card .times li:last-child { border: 0; }
-  .sched-card .times .day { color: white; font-weight: 600; }
-  .sched-card .times .hr { color: #ffd9dc; }
-
-  .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
-  .price-card {
-    background: white; border: 1px solid var(--line); border-radius: var(--radius);
-    padding: 30px 24px; text-align: center; transition: all 0.2s ease; position: relative;
-  }
-  .price-card:hover { border-color: var(--accent); transform: translateY(-4px); box-shadow: var(--shadow-md); }
-  .price-card .ribbon {
-    position: absolute; top: -10px; left: 50%; transform: translateX(-50%);
-    background: var(--court); color: white; font-family: 'Bebas Neue', sans-serif;
-    font-size: 12px; letter-spacing: 2px; padding: 4px 14px; border-radius: 999px;
-  }
-  .price-card .ptype {
-    color: var(--ink-soft); font-size: 14px; text-transform: uppercase;
-    letter-spacing: 1.5px; margin-bottom: 16px; font-weight: 600;
-  }
-  .price-card .pamount { font-family: 'Bebas Neue', sans-serif; font-size: 46px; color: var(--accent); line-height: 1; }
-  .price-card .pamount small { font-size: 18px; color: var(--ink-soft); font-family: 'Manrope', sans-serif; }
-  .price-card .punit { color: var(--muted); font-size: 13px; margin-top: 8px; }
-  .pricing-notes {
-    background: white; border-left: 4px solid var(--accent); padding: 18px 24px;
-    margin-top: 28px; color: var(--ink-soft); font-size: 14px; line-height: 2; border-radius: 8px;
-  }
-
-  .results-section { background: white; }
-  .results-wrap { max-width: var(--max); margin: 0 auto; padding: 90px 24px; }
-  .season-title {
-    font-family: 'Bebas Neue', sans-serif; font-size: 32px; letter-spacing: 2px;
-    color: var(--court); margin: 50px 0 24px; padding-bottom: 12px;
-    border-bottom: 3px solid var(--court); display: inline-block;
-  }
-  .season-title:first-of-type { margin-top: 0; }
-  .players-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 22px; }
-  .player {
-    background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius);
-    padding: 26px; transition: all 0.25s ease;
-  }
-  .player:hover { border-color: var(--court); transform: translateY(-4px); box-shadow: var(--shadow-md); }
-  .player-head {
-    display: flex; align-items: center; gap: 14px; margin-bottom: 20px;
-    padding-bottom: 16px; border-bottom: 1px solid var(--line);
-  }
-  .player-avatar {
-    width: 52px; height: 52px; border-radius: 50%;
-    background: linear-gradient(135deg, var(--court), var(--court-dark));
-    color: white; display: flex; align-items: center; justify-content: center;
-    font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 1px;
-  }
-  .player-name { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 1px; color: var(--ink); }
-  .player-cat {
-    display: inline-block; background: #fbeeef; color: var(--accent);
-    font-weight: 700; font-size: 11px; padding: 3px 9px; border-radius: 4px;
-    margin-left: 8px; letter-spacing: 1px;
-  }
-  .achievements { list-style: none; display: flex; flex-direction: column; gap: 12px; }
-  .achievements li { font-size: 14px; color: var(--ink-soft); padding-left: 26px; position: relative; line-height: 1.55; }
-  .achievements li::before {
-    content: ''; position: absolute; left: 0; top: 6px;
-    width: 14px; height: 14px; border-radius: 50%;
-    background: var(--silver); box-shadow: inset 0 -2px 0 rgba(0,0,0,0.15);
-  }
-  .achievements li.gold::before { background: var(--gold); }
-  .achievements li.silver::before { background: var(--silver); }
-  .achievements li.bronze::before { background: var(--bronze); }
-  .achievements li.none::before { background: var(--court); }
-  .achievements li strong { color: var(--ink); font-weight: 700; }
-
-  .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
-  .contact-item {
-    background: white; border: 1px solid var(--line); border-radius: var(--radius);
-    padding: 26px; transition: all 0.2s ease;
-  }
-  .contact-item:hover { border-color: var(--accent); transform: translateY(-3px); }
-  .contact-item .ci-icon {
-    width: 44px; height: 44px; border-radius: 10px;
-    background: #fbeeef; color: var(--accent);
-    display: inline-flex; align-items: center; justify-content: center;
-    font-size: 22px; margin-bottom: 14px;
-  }
-  .contact-item .ci-label {
-    font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
-    color: var(--muted); margin-bottom: 6px; font-weight: 700;
-  }
-  .contact-item .ci-value { font-size: 17px; font-weight: 700; color: var(--ink); word-break: break-word; }
-  .contact-item .ci-value a { color: var(--ink); text-decoration: none; }
-  .contact-item .ci-value a:hover { color: var(--accent); }
-  .contact-item .ci-sub { color: var(--muted); font-size: 13px; font-weight: 500; margin-top: 4px; }
-
-  .cta-banner {
-    background: linear-gradient(135deg, var(--accent), #c52a37);
-    color: white; border-radius: var(--radius); padding: 50px 40px;
-    text-align: center; margin-top: 50px; box-shadow: var(--shadow-md);
-  }
-  .cta-banner h3 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(28px, 4vw, 42px); letter-spacing: 1px; margin-bottom: 14px; }
-  .cta-banner p { margin-bottom: 24px; opacity: 0.92; }
-  .cta-banner .btn-primary { background: white; color: var(--accent); box-shadow: 0 6px 16px rgba(0,0,0,0.18); }
-  .cta-banner .btn-primary:hover { background: #fff; transform: translateY(-2px); }
-
-  footer { background: var(--ink); color: rgba(255,255,255,0.7); padding: 50px 24px 30px; text-align: center; }
-  footer .brand-mark { margin: 0 auto 16px; }
-  footer .ftitle { font-family: 'Bebas Neue', sans-serif; color: white; font-size: 22px; letter-spacing: 2px; margin-bottom: 8px; }
-  footer .copy { font-size: 13px; margin-top: 20px; color: rgba(255,255,255,0.4); }
-
-  .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
-  .fade-in.visible { opacity: 1; transform: translateY(0); }
-
-  @media (max-width: 760px) {
-    .nav-links a:not(.nav-cta):not(.nav-icon) { display: none; }
-    .about-grid { grid-template-columns: 1fr; }
-    .about-image { aspect-ratio: 4/3; }
-    section { padding: 60px 18px; }
-    .creds-wrap, .schedule-wrap, .results-wrap { padding: 60px 18px; }
-    .hero-inner { padding: 70px 18px 100px; }
-    .hero-stats > div { border-right: 0; border-bottom: 1px solid var(--line); }
-    .hero-stats > div:last-child { border-bottom: 0; }
-  }
-</style>
+<link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
 <body>
 
@@ -396,7 +89,7 @@
       <p>针对个人特点因材施教，为孩子的羽毛球之路打下扎实基本功。无论您零基础，还是想在原有基础上实现进阶，或是想在比赛中获得奖牌，我们俱乐部都可以帮助您实现。</p>
     </div>
     <div class="about-image">
-      <img src="wzq.png" alt="WZQ Badminton Club" />
+      <img src="wzq.png" alt="WZQ Badminton Club" loading="lazy" decoding="async" />
     </div>
   </div>
 </section>
@@ -772,7 +465,7 @@
 </section>
 
 <footer>
-  <div class="brand-mark" style="width:64px;height:64px;"><img src="logo.jpg" alt="WZQ Badminton Club logo" /></div>
+  <div class="brand-mark" style="width:64px;height:64px;"><img src="logo.jpg" alt="WZQ Badminton Club logo" loading="lazy" decoding="async" /></div>
   <div class="ftitle" style="margin-top:12px;">WZQ BADMINTON CLUB</div>
   <div>2780 S Reservoir St, Pomona, CA · 626-265-5766</div>
   <div style="margin-top:16px;">
@@ -784,17 +477,31 @@
   <div class="copy">© 2025 WZQ Badminton Club · All Rights Reserved</div>
 </footer>
 
-<script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-        observer.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.08 });
-  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsClub",
+  "name": "WZQ Badminton Club",
+  "alternateName": "WZQ 羽毛球俱乐部",
+  "description": "由原中国羽毛球退役运动员创办，BWF 世界羽联与美国羽毛球协会双认证教练团队。",
+  "url": "https://wzqbadminton.com/",
+  "image": "https://wzqbadminton.com/logo.jpg",
+  "logo": "https://wzqbadminton.com/logo.jpg",
+  "telephone": "+1-626-265-5766",
+  "sport": "Badminton",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2780 S Reservoir St",
+    "addressLocality": "Pomona",
+    "addressRegion": "CA",
+    "addressCountry": "US"
+  },
+  "sameAs": [
+    "https://www.instagram.com/wzqbadmintonclub/"
+  ]
+}
 </script>
+<script src="/assets/js/main.js" defer></script>
 
 </body>
 </html>
